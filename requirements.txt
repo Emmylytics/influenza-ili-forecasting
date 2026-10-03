@@ -1,0 +1,8 @@
+numpy==2.5.2
+pandas==3.0.6
+matplotlib==3.11.1
+scikit-learn==1.9.1
+statsmodels==0.15.0
+prophet==1.4.0
+xgboost==3.4.1
+epiweeks==2.4.0
