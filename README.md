@@ -41,27 +41,6 @@ The main objectives of this project are to:
 
 ---
 
-## 📊 Dataset
-
-The dataset used in this project comes from the **U.S. Centers for Disease Control and Prevention (CDC) Influenza-like Illness Surveillance Network (ILINet)** and is accessed through CDC FluView.
-
-ILINet collects weekly outpatient healthcare-provider reports of patients presenting with influenza-like illness.
-
-The dataset used in this project contains:
-
-- **1,499 weekly observations**
-- **National-level surveillance data**
-- Weekly epidemiological observations
-- `% Weighted ILI` as the forecasting target
-- Age-group reporting variables
-- Healthcare-provider reporting variables
-
-🔗 **Data source:** [CDC FluView](https://www.cdc.gov/fluview/)
-
-> **Note:** Influenza-like illness (ILI) is a syndromic surveillance measure and should not be interpreted as laboratory-confirmed influenza infection. ILI can also be caused by other respiratory pathogens.
-
----
-
 # 🔍 1. Data Understanding
 
 The first stage focused on understanding the structure and characteristics of the raw ILINet dataset.
@@ -320,7 +299,7 @@ Feature importance was examined for the two tree-based forecasting models.
 
 `weighted_ili_lag_1` was also the dominant feature, with the 52-week lag and other temporal features contributing additional predictive information.
 
-![Random Forest Feature Importance](outputs/figures/feature_importance_random_forest.png)
+![Random Forest Feature Importance](outputs/figures/feature_importance_RF.png)
 
 > **Note:** Feature importance describes how useful a feature was to the fitted model. It does not establish a causal relationship between the feature and influenza-like illness activity.
 
@@ -446,3 +425,24 @@ Run the notebooks in the following order:
         ↓
 05_modeling.ipynb
 ```
+
+---
+
+## 📊 Dataset
+
+The dataset used in this project comes from the **U.S. Centers for Disease Control and Prevention (CDC) Influenza-like Illness Surveillance Network (ILINet)** and is accessed through CDC FluView.
+
+ILINet collects weekly outpatient healthcare-provider reports of patients presenting with influenza-like illness.
+
+The dataset used in this project contains:
+
+- **1,499 weekly observations**
+- **National-level surveillance data**
+- Weekly epidemiological observations
+- `% Weighted ILI` as the forecasting target
+- Age-group reporting variables
+- Healthcare-provider reporting variables
+
+🔗 **Data source:** [CDC FluView](https://www.cdc.gov/fluview/)
+
+> **Note:** Influenza-like illness (ILI) is a syndromic surveillance measure and should not be interpreted as laboratory-confirmed influenza infection. ILI can also be caused by other respiratory pathogens.
